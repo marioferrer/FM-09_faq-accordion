@@ -27,8 +27,8 @@ Mobile
 
 ### Links
 
-- Solution Frontend Mentor: [Frontend solution](https://www.frontendmentor.io/solutions/social-proof-section-HOrJECzrEk)
-- Live Site: [Live site with GitHub Pages](https://marioferrer.github.io/FM-08_social-proof/)
+- Solution Frontend Mentor: [Frontend solution](https://www.frontendmentor.io/solutions/faq-accordion-7OmdQgBkSx)
+- Live Site: [Live site with GitHub Pages](https://marioferrer.github.io/FM-09_faq-accordion/)
 
 ## My process
 
