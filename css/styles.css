@@ -1,0 +1,252 @@
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  vertical-align: baseline;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+}
+
+img,
+picture,
+video,
+iframe,
+figure {
+  max-width: 100%;
+  width: 100%;
+  display: block;
+}
+
+a {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  font-size: inherit;
+}
+
+p a {
+  display: inline;
+}
+
+li {
+  list-style-type: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span,
+a,
+strong,
+blockquote,
+i,
+b,
+u,
+em {
+  font-size: 1rem;
+  font-weight: inherit;
+  font-style: inherit;
+  text-decoration: none;
+  color: inherit;
+}
+
+svg {
+  width: 100%;
+  display: block;
+  fill: currentColor;
+}
+
+:root {
+  --dark-blue: hsl(238, 29%, 16%);
+  --orange: hsl(14, 88%, 65%);
+  --dark-gray: hsl(237, 12%, 33%);
+  --gray: hsl(240, 6%, 50%);
+  --violet: hsl(273, 75%, 66%);
+  --blue: hsl(240, 73%, 65%);
+  --gradient: linear-gradient(var(--violet), var(--blue));
+  --divider: hsl(240, 5%, 91%);
+  --font-size: 12px;
+  --ff: "Kumbh Sans", sans-serif;
+}
+
+html {
+  font-size: var(--font-size);
+}
+
+body {
+  font-family: var(--ff);
+  background: var(--gradient);
+  color: var(--gray);
+  display: grid;
+  place-content: center;
+}
+
+.container {
+  width: 325px;
+  background-color: white;
+  border-radius: 1rem;
+  padding: 11rem 2rem 4rem;
+  position: relative;
+}
+@media screen and (min-width: 1440px) {
+  .container {
+    padding: 0;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0;
+    width: auto;
+  }
+  .container .mobile {
+    display: none;
+  }
+}
+
+.mobile__ilustration {
+  position: absolute;
+  width: 75%;
+  top: -110px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.mobile__shadow {
+  position: absolute;
+  width: 75%;
+  top: 0px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+}
+
+.desktop {
+  display: none;
+}
+@media screen and (min-width: 1440px) {
+  .desktop {
+    display: flex;
+    position: relative;
+    overflow: hidden;
+    width: 50%;
+    height: 100%;
+    margin-right: 3rem;
+  }
+}
+.desktop__ilustration {
+  position: absolute;
+  top: 20%;
+  left: -50px;
+  transform: scale(1.15);
+}
+.desktop__shadow {
+  position: absolute;
+  transform: scale(2.5);
+  top: -10px;
+  left: -315px;
+}
+.desktop__box {
+  display: none;
+}
+@media screen and (min-width: 1440px) {
+  .desktop__box {
+    display: block;
+    position: absolute;
+    left: -80px;
+    top: 220px;
+    width: 20%;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .faq {
+    padding: 6rem 10rem 6rem 0;
+    width: 50%;
+  }
+}
+.faq__h1 {
+  text-align: center;
+  font-weight: 700;
+  font-size: 2.5rem;
+  color: var(--dark-blue);
+  margin-bottom: 1rem;
+}
+@media screen and (min-width: 1440px) {
+  .faq__h1 {
+    text-align: start;
+    margin-bottom: 2rem;
+  }
+}
+
+.tabs {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 0rem;
+  overflow: hidden;
+}
+
+.tab {
+  width: 100%;
+  border-bottom: 1px solid var(--divider);
+  overflow: hidden;
+}
+.tab input {
+  position: absolute;
+  opacity: 0;
+}
+.tab input:checked + .tab__label {
+  color: var(--dark-blue);
+  font-weight: 700;
+}
+.tab input:checked + .tab__label::after {
+  transform: rotate(180deg);
+}
+.tab input:checked ~ .tab__p {
+  max-height: 100vh;
+  padding: 0 1rem 1rem 0;
+}
+@media screen and (min-width: 1440px) {
+  .tab input:checked ~ .tab__p {
+    padding: 0 0 1rem 0;
+  }
+}
+.tab__label {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0;
+  width: 100%;
+  font-size: 1.1rem;
+  padding: 1.5rem 0;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.tab__label::after {
+  content: url(../images/icon-arrow-down.svg);
+  transition: all 0.3s;
+}
+.tab__label:hover {
+  color: var(--orange);
+}
+.tab__p {
+  max-height: 0;
+  transition: all 0.3s ease;
+}
+
+.mover {
+  left: 50px;
+  border: 1px solid green;
+}/*# sourceMappingURL=styles.css.map */

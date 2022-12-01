@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- favicon -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <!-- google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <!-- css styles -->
+  <link rel="stylesheet" href="css/styles.css">
+  <!-- site title -->
+  <title>Frontend Mentor | FAQ Accordion Card</title>
+</head>
+
+<body>
+
+  <main class="container">
+    <picture class="mobile">
+      <img class="mobile__ilustration" src="images/illustration-woman-online-mobile.svg" alt="image faq">
+      <img class="mobile__shadow" src="images/bg-pattern-mobile.svg" alt="image shadow">
+    </picture>
+    <picture class="desktop">
+      <img class="desktop__shadow" src="images/bg-pattern-desktop.svg" alt="image shadow">
+      <img class="desktop__ilustration" src="images/illustration-woman-online-desktop.svg" alt="image faq">
+    </picture>
+
+    <section class="faq">
+      <h1 class="faq__h1">FAQ</h1>
+      <div class="tabs">
+        <div class="tab">
+          <input type="checkbox"  id="check1">
+          <label class="tab__label" for="check1">How many team members can I invite?</label>
+          <p class="tab__p">You can invite up to 2 additional users on the Free plan. There is no limit on team members
+            for the Premium plan.</p>
+        </div>
+        <div class="tab">
+          <input type="checkbox" id="check2">
+          <label class="tab__label" for="check2">What is the maximum file upload size?</label>
+          <p class="tab__p">No more than 2GB. All files in your account must fit your allotted storage space.</p>
+        </div>
+        <div class="tab">
+          <input type="checkbox" id="check3">
+          <label class="tab__label" for="check3">How do I reset my password?</label>
+          <p class="tab__p">Click “Forgot password” from the login page or “Change password” from your profile page. A
+            reset link will be emailed to you.</p>
+        </div>
+        <div class="tab">
+          <input type="checkbox" id="check4">
+          <label class="tab__label" for="check4">Can I cancel my subscription?</label>
+          <p class="tab__p">Yes! Send us a message and we’ll process your request no questions asked.</p>
+        </div>
+        <div class="tab">
+          <input type="checkbox" id="check5">
+          <label class="tab__label" for="check5">Do you provide additional support?</label>
+          <div class="tab__p">Chat and email support is available 24/7. Phone lines are open during normal business
+            hours.
+          </div>
+        </div>
+      </div>
+      <img class="desktop__box" src="images/illustration-box-desktop.svg" alt="image box">
+    </section>
+  </main>
+
+</body>
+</html>

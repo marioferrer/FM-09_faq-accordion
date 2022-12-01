@@ -1,0 +1,13 @@
+@mixin flex ($direction, $wrap, $justify, $align, $gap) {
+  display: flex;
+  flex-flow: $direction $wrap;
+  justify-content: $justify;
+  align-items: $align;
+  gap: $gap;
+}
+
+@mixin media () {
+  @media screen and (min-width: 1440px) {
+    @content
+  }
+}
